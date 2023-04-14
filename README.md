@@ -4,7 +4,6 @@ A simple yet useful password generator written entirely in python.
 # Modules used
 ### External modules
 1. Flet: [flet.dev](https://flet.dev/)
-2. Pyautogui: https://pypi.org/project/PyAutoGUI/
 
 ### Built-in modules
 1. random
