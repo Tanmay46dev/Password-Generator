@@ -7,9 +7,8 @@ A simple yet useful password generator written entirely in python.
 2. Pyautogui: https://pypi.org/project/PyAutoGUI/
 
 ### Built-in modules
-1. os
-2. random
-3. pyperclip
+1. random
+2. pyperclip
 
 # Details
 - This password generator has both CLI and GUI versions.
