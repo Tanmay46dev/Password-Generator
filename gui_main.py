@@ -3,7 +3,7 @@ from common_utils import generate_password, copy_to_clip
 
 def main(page: ft.Page):
     page.title = "Password Generator"
-    page.window_width = 450
+    page.window_width = 600
     page.window_height = 700
 
 
@@ -52,14 +52,6 @@ def main(page: ft.Page):
         value=True
     )
 
-    length_slider = ft.Slider(
-        min=1,
-        max=100,
-        value=10,
-        label="{value}",
-        divisions=100,
-        expand=True,
-    )
     pass_field = ft.TextField(
         value="Password will be shown here.",
         disabled=True,
@@ -130,8 +122,9 @@ def main(page: ft.Page):
     )
 
     length_field = ft.TextField(
-        hint_text = "Enter the password length",
+        label = "Length",
         dense=True,
+        width=200
     )
 
 
@@ -156,7 +149,7 @@ def main(page: ft.Page):
                         ft.Row(
                             controls = [
                                 ft.Text(
-                                    value="Select the length of the password: ",
+                                    value="Password length: ",
                                     style=ft.TextThemeStyle.LABEL_LARGE
                                 ),
                                 length_field,
@@ -181,4 +174,4 @@ def main(page: ft.Page):
     page.update()
 
 
-ft.app(target=main)
+ft.app(target=main, view=ft.AppView.WEB_BROWSER)
